@@ -343,11 +343,9 @@ img{
   box-shadow: 0 2px 4px rgba(3,74,40,.15);
   padding: .75rem;
 }
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
+
 .menu__img{
   width: 100px;
   align-self: center;
@@ -516,6 +514,23 @@ img{
   margin-top: 3.5rem;
 }
 
+.container { 
+  height: 200px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
   .home__container,
@@ -615,9 +630,12 @@ img{
   }
 }
 
+
+
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
     .home__container {
         height: 640px;
     }
 }
+
